@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener(){
 
-            //message.setText(password.toString())
+            message.setText(password.text)
 
-            if(username.equals("admin") && password.equals("admin123")){
+            if(password.equals("admin123")){
                 message.setText("Login Success..!")
             }else{
                 message.setText("Login Failed..")
