@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         btn.setOnClickListener(){
 
             message.setText(password.text)
-
+//issue not w
             if(password.equals("admin123")){
                 message.setText("Login Success..!")
             }else{
