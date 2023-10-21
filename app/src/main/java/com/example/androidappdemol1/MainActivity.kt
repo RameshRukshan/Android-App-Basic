@@ -1,5 +1,6 @@
 package com.example.androidappdemol1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,16 +18,8 @@ class MainActivity : AppCompatActivity() {
         var btn = findViewById<Button>(R.id.btn_login)
 
         btn.setOnClickListener(){
-
-            message.setText(password.text)
-//issue not w
-            if(password.equals("admin123")){
-                message.setText("Login Success..!")
-            }else{
-                message.setText("Login Failed..")
-            }
-
-
+            var intn = Intent(this,Home::class.java)
+            startActivity(intn)
         }
     }
 }
