@@ -13,15 +13,19 @@
         android:theme="@style/Theme.AndroidAppDemoL1"
         tools:targetApi="34">
         <activity
+            android:name=".member_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".verify"
+            android:exported="false" />
+        <activity
             android:name=".Home"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MainActivity"
